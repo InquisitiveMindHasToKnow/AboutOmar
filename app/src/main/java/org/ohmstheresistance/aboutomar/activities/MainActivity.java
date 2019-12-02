@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+
 
 import org.ohmstheresistance.aboutomar.R;
 
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //        leftAndroidBotImageView.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake));
 //        rightAndroidBotImageView.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake));
+
     }
 
     @Override
@@ -52,12 +53,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, AboutMe.class);
                 startActivity(navigationIntent);
+                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
                 break;
 
             case R.id.profile_contact_me_button:
 
                 navigationIntent = new Intent(MainActivity.this, ContactMe.class);
                 startActivity(navigationIntent);
+                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
 
                 break;
 
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Projects.class);
                 startActivity(navigationIntent);
+                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
                 break;
 
 
@@ -72,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Resume.class);
                 startActivity(navigationIntent);
+                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
                 break;
         }
     }
