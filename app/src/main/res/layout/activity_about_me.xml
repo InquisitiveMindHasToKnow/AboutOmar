@@ -6,11 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".activities.AboutMe">
 
-    <TextView
+    <View
+        android:layout_width="412dp"
+        android:layout_height="251dp"
+        android:background="#00796b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="56sp"
-        android:text="About Me"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:gravity="center"
+            android:textSize="56sp"
+            android:text="About Me"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="\t \t I've been interested in Android Development for about as long as I can remember. Growing up, I was always fascinated by the joy games and applications brought to people and how much easier they made their lives.  "
+            />
+
+
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

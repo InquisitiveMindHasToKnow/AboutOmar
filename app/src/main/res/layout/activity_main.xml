@@ -174,12 +174,14 @@
 
 
                     <ImageView
+                        android:id="@+id/profile_left_android_bot_imageview"
                         android:layout_width="120dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/flippedandroidbot"/>
 
                     <ImageView
+                        android:id="@+id/profile_right_android_bot_imageview"
                         android:layout_width="120dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
