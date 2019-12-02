@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00796b"
+    tools:context=".MainActivity">
+
+
+        <View
+            android:layout_width="412dp"
+            android:layout_height="251dp"
+            android:background="#00796b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="88dp"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_user_image_circular_imageview"
+            android:layout_width="190dp"
+            android:layout_height="181dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:src="@drawable/aimingcupid2"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/textPrimaryColor"
+            app:civ_shadow_radius="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile_user_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="66dp"
+                    android:text="Omar Raymond"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profile_user_location_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="Brooklyn, NY"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/profile_user_occupation_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="Android Developer"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/profile_about_user_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"
+                    android:text="I'm a hardworking, dedicated developer who does not shy away from a challenge!"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>
