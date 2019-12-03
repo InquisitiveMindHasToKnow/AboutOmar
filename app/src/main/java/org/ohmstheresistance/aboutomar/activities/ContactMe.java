@@ -3,14 +3,10 @@ package org.ohmstheresistance.aboutomar.activities;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -54,8 +50,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
             @Override
             public void run() {
 
-                contactMeAndroidRobot.setVisibility(View.GONE);
-                contactMeAndroidRobot.clearAnimation();
+                contactMeAndroidRobot.startAnimation(AnimationUtils.loadAnimation(ContactMe.this, R.anim.exit_bottom));
 
             }
         }, 9000);
