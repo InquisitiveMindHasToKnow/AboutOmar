@@ -12,4 +12,14 @@ public class AboutMe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        overridePendingTransition(0, 0);
+
+    }
 }
+

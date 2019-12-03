@@ -12,4 +12,12 @@ public class Projects extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projects);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        overridePendingTransition(0, R.anim.scaledown);
+
+    }
 }
