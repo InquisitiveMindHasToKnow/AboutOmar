@@ -80,8 +80,14 @@
                     android:background="@drawable/messageicon"/>
             </LinearLayout>
 
-
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/contact_me_android_robot"
+            android:layout_width="160dp"
+            android:layout_height="224dp"
+            android:src="@drawable/droid"
+            android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 
