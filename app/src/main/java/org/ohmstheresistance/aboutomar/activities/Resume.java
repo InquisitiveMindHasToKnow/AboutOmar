@@ -12,4 +12,12 @@ public class Resume extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resume);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        overridePendingTransition(0, R.anim.scaledown);
+
+    }
 }

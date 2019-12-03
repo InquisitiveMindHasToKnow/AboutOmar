@@ -38,9 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         profileProjectsButton.setOnClickListener(this);
         profileResumeButton.setOnClickListener(this);
 
-//        leftAndroidBotImageView.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake));
-//        rightAndroidBotImageView.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake));
-
     }
 
     @Override
@@ -60,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, ContactMe.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
+                overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
 
                 break;
 
@@ -68,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Projects.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
                 break;
 
 
@@ -76,9 +73,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Resume.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
                 break;
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+            overridePendingTransition(R.anim.zoom_enter, 0);
+    }
 }

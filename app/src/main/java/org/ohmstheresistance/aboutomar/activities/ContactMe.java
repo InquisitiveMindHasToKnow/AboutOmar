@@ -12,4 +12,12 @@ public class ContactMe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_me);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        overridePendingTransition(0, R.anim.scaledown);
+
+    }
 }
