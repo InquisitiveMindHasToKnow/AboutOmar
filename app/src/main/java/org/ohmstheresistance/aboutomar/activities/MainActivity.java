@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 
 import org.ohmstheresistance.aboutomar.R;
@@ -16,8 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button profileContactMeButton;
     private Button profileProjectsButton;
     private Button profileResumeButton;
-    private ImageView leftAndroidBotImageView;
-    private ImageView rightAndroidBotImageView;
+
 
     private Intent navigationIntent;
     @Override
@@ -30,8 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         profileContactMeButton = findViewById(R.id.profile_contact_me_button);
         profileProjectsButton = findViewById(R.id.profile_projects_button);
         profileResumeButton = findViewById(R.id.profile_resume_button);
-        leftAndroidBotImageView = findViewById(R.id.profile_left_android_bot_imageview);
-        rightAndroidBotImageView = findViewById(R.id.profile_right_android_bot_imageview);
 
         profileAboutMeButton.setOnClickListener(this);
         profileContactMeButton.setOnClickListener(this);
