@@ -14,6 +14,7 @@ import org.ohmstheresistance.aboutomar.R;
  */
 public class TributeFragment extends Fragment {
 
+    private View rootView;
 
     public TributeFragment() {
         // Required empty public constructor
@@ -24,7 +25,9 @@ public class TributeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tribute, container, false);
+        rootView = inflater.inflate(R.layout.fragment_tribute, container, false);
+
+        return rootView;
     }
 
 }
