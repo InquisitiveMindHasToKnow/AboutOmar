@@ -8,7 +8,7 @@
 
     <View
         android:layout_width="412dp"
-        android:layout_height="251dp"
+        android:layout_height="160dp"
         android:background="#00796b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="251dp"
+            android:layout_height="160dp"
             android:gravity="center"
             android:text="Contact Me"
             android:textSize="56sp" />

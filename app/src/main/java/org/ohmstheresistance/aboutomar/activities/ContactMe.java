@@ -70,7 +70,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
                 contactIntent = new Intent(Intent.ACTION_SEND);
                 contactIntent.setType("message/rfc822");
                 contactIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
-                contactIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello ");
+                contactIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello, Omar!");
 
                 try {
                     startActivity(Intent.createChooser(contactIntent, "Email me"));
