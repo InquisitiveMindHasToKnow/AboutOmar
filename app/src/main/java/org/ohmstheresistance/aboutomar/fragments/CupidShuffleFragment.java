@@ -12,6 +12,8 @@ import org.ohmstheresistance.aboutomar.R;
 public class CupidShuffleFragment extends Fragment {
 
 
+    private View rootView;
+
     public CupidShuffleFragment() {
         // Required empty public constructor
     }
@@ -20,8 +22,10 @@ public class CupidShuffleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cupid_shuffle, container, false);
+        rootView = inflater.inflate(R.layout.fragment_cupid_shuffle, container, false);
+
+
+        return rootView;
     }
 
 }

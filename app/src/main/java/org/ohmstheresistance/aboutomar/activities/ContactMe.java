@@ -53,7 +53,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
                 contactMeAndroidRobot.startAnimation(AnimationUtils.loadAnimation(ContactMe.this, R.anim.exit_bottom));
 
             }
-        }, 9000);
+        }, 5000);
 
     }
 
