@@ -4,6 +4,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import org.ohmstheresistance.aboutomar.R;
 import org.ohmstheresistance.aboutomar.adapters.ProjectsViewPagerAdapter;
@@ -14,6 +17,7 @@ import org.ohmstheresistance.aboutomar.fragments.TributeFragment;
 public class Projects extends AppCompatActivity {
 
     private ViewPager projectsViewPager;
+    private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +27,11 @@ public class Projects extends AppCompatActivity {
         projectsViewPager = findViewById(R.id.projects_viewPager);
         setUpViewPager(projectsViewPager);
 
-        TabLayout tabLayout = findViewById(R.id.tabs);
+        tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(projectsViewPager);
+
+        disableTabClicks();
+
     }
 
 
@@ -38,6 +45,18 @@ public class Projects extends AppCompatActivity {
         viewPager.setAdapter(projectsViewPagerAdapter);
     }
 
+    private void disableTabClicks(){
+
+        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
+        for(int i = 0; i < tabStrip.getChildCount(); i++) {
+            tabStrip.getChildAt(i).setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    return true;
+                }
+            });
+        }
+    }
 
     @Override
     public void onBackPressed() {

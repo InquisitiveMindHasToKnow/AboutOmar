@@ -32,18 +32,80 @@
         android:textSize="16sp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Tribute is the ultimate randomizing application to help anyone who is lacking in knowledge of the different countries around the world learn in minutes! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " />
+        android:text="Take a step back, imagine yourself in your favorite class taking notes and trying to focus on the lecture as you’re genuinely interesting in learning the subject matter. \n\nNow imagine that focus constantly being broken by your instructor calling on you, on multiple occasions to demonstrate how to solve certain problems in front of the class. Yep, that’s what happened to me, and what led to Tribute being created. \n\nTribute selects a name from a pool of names at random and removes it from the pool once it’s been picked just once. My instructor was now afforded the opportunity to either use the pre-made list of names or create his own to choose from. \n\nRoom Database, RxJava, Shared Preferences, and  Retrotfit 2  are among the many libraries utilized in the making of this application."/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
 
 
-        <ImageView
-            android:id="@+id/tribute_imageview2"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/androidbot"/>
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_signin_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tribute_signin_page"/>
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_registration_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tribute_registration_page"/>
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_main_page_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/tribute_main_page" />
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_stock_names_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tribute_stock_names"/>
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_selected_person_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tribute_random_peerson_picked"/>
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/tribute_added_person_imageview"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tribute_added_name"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
         <TextView
-            android:id="@+id/tribute_description_textview2"
+            android:id="@+id/tribute_link_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -51,7 +113,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="24dp"
             android:layout_marginEnd="16dp"
-            android:text="It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+            android:text="Click to view source code"
             />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
