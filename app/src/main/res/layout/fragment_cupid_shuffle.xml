@@ -48,7 +48,7 @@
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/androidbot"/>
             <TextView
-                android:id="@+id/tribute_description_textview2"
+                android:id="@+id/cupid_shuffle_link_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
