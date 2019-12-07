@@ -30,7 +30,6 @@ public class Projects extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(projectsViewPager);
-        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.mainBackgroundColor)));
 
         disableTabClicks();
 
