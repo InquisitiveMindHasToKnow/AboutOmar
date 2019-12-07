@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.chrisbanes.photoview.PhotoView;
@@ -20,7 +21,7 @@ public class TributeFragment extends Fragment {
 
     private View rootView;
     private TextView tributeDescriptionTextView;
-    private TextView tributeLinkTextView;
+    private Button tributeLinkButton;
     private PhotoView tributeSignInPageImageView;
     private PhotoView tributeRegistrationPageImageView;
     private PhotoView tributeMainPageImageView;
@@ -40,7 +41,7 @@ public class TributeFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_tribute, container, false);
 
         tributeDescriptionTextView = rootView.findViewById(R.id.tribute_description_textview);
-        tributeLinkTextView = rootView.findViewById(R.id.tribute_link_textview);
+        tributeLinkButton = rootView.findViewById(R.id.tribute_link_button);
         tributeSignInPageImageView = rootView.findViewById(R.id.tribute_signin_imageview);
         tributeRegistrationPageImageView = rootView.findViewById(R.id.tribute_registration_imageview);
         tributeMainPageImageView = rootView.findViewById(R.id.tribute_main_page_imageview);
@@ -55,7 +56,7 @@ public class TributeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        tributeLinkTextView.setOnClickListener(new View.OnClickListener() {
+        tributeLinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

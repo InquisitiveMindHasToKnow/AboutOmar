@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.chrisbanes.photoview.PhotoView;
@@ -21,7 +22,7 @@ public class KnowYourWorldFragment extends Fragment {
 
     private View rootView;
     private TextView knowYourWorldDescriptionTextView;
-    private TextView knowYourWorldLinkTextView;
+    private Button knowYourWorldLinkButton;
     private PhotoView knowYourWorldMainPageImageView;
     private PhotoView knowYourWorldStudyImageView;
     private PhotoView knowYourWorldSelectedCountryImageView;
@@ -42,7 +43,7 @@ public class KnowYourWorldFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_know_your_world, container, false);
 
         knowYourWorldDescriptionTextView = rootView.findViewById(R.id.know_your_world_description_textview);
-        knowYourWorldLinkTextView = rootView.findViewById(R.id.know_your_world_link_textview);
+        knowYourWorldLinkButton = rootView.findViewById(R.id.know_your_world_link_button);
         knowYourWorldMainPageImageView = rootView.findViewById(R.id.kyw_main_page_imageview);
         knowYourWorldStudyImageView = rootView.findViewById(R.id.kyw_study_imageview);
         knowYourWorldSelectedCountryImageView = rootView.findViewById(R.id.kyw_selected_country_imageview);
@@ -57,7 +58,7 @@ public class KnowYourWorldFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        knowYourWorldLinkTextView.setOnClickListener(new View.OnClickListener() {
+        knowYourWorldLinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
