@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
     tools:context=".activities.AboutMe">
 
     <View
         android:layout_width="412dp"
         android:layout_height="160dp"
-        android:background="#00796b"
+        android:background="@color/mainViewColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:textColor="@color/textColor"
             android:text="\t \t I've been interested in Android Development for about as long as I can remember. Growing up, I was always fascinated by the joy games and applications brought to people and how much easier they made their lives.  "
             />
 

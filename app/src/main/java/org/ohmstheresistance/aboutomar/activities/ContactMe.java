@@ -114,7 +114,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
     public void onBackPressed() {
         super.onBackPressed();
 
-        overridePendingTransition(0, R.anim.scaledown);
+        overridePendingTransition(0, R.anim.zoom_exit);
 
     }
 
