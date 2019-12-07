@@ -10,7 +10,8 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +45,8 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -59,52 +61,76 @@
 
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview1"
+                            android:id="@+id/cs_login_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/cs_login_screen"/>
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview2"
+                            android:id="@+id/cs_main_user_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/cs_main_user"/>
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview3"
+                            android:id="@+id/cs_potential_match_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="16dp"
-                            android:src="@drawable/androidbot" />
+                            android:src="@drawable/cs_potential_match" />
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview4"
+                            android:id="@+id/cs_list_of_locations"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/cs_list_of_locations"/>
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview5"
+                            android:id="@+id/cs_date_reservation_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/cs_date_reservation"/>
 
                         <com.github.chrisbanes.photoview.PhotoView
-                            android:id="@+id/cupid_shuffle_imageview6"
+                            android:id="@+id/cs_date_prompt_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/cs_date_prompt"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cs_direct_messages_imageview"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cs_direct_messages"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cs_connection_requests_imageview"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cs_connection_requests"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cs_date_reservation_confirmation_imageview"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/cs_reservation_confirmation"/>
 
                     </LinearLayout>
 

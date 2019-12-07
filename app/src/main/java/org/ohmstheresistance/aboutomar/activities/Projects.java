@@ -1,5 +1,6 @@
 package org.ohmstheresistance.aboutomar.activities;
 
+import android.content.res.ColorStateList;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,7 @@ public class Projects extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(projectsViewPager);
+        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.mainBackgroundColor)));
 
         disableTabClicks();
 

@@ -31,6 +31,12 @@
             android:textSize="56sp" />
 
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -66,9 +72,48 @@
                 android:textStyle="bold"
                 android:textColor="@color/textColor"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:text="Android Development Fellow"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:text="Pursuit - Long Island City, NY"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:text="Sept 2018 - Present"
+                />
+
+
+            <TextView
+                android:id="@+id/pursuit_experience_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/textColor"
+                android:text="- Enrolled in an intensive 10-month, Google-funded software engineering fellowship with a 9% acceptance rate \n\n - Gained hands-on experience with Java, Android SDK, REST APIs, Git, Data Structures, Algorithms, and tech principles and culture \n\n - Worked on team/individual projects, code reviews, and pair programming"
+                />
+
 
 
         </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
