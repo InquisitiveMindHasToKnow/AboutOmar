@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 
-import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -16,7 +15,7 @@ public class AboutMe extends AppCompatActivity {
 
     private ViewFlipper descriptiveWordsViewFlipper;
     private TextView descriptiveWordsTextView;
-    private String[] descriptiveList = {"Dedicated", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional"};
+    private String[] descriptiveList = {"Dedicated", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional", "Driven"};
 
 
     @Override
@@ -38,6 +37,8 @@ public class AboutMe extends AppCompatActivity {
 
         }
 
+        descriptiveWordsViewFlipper.setInAnimation(AboutMe.this, R.anim.bounce);
+        descriptiveWordsViewFlipper.setOutAnimation(AboutMe.this,  R.anim.slide_out_right);
         descriptiveWordsViewFlipper.setFlipInterval(4000);
         descriptiveWordsViewFlipper.startFlipping();
 

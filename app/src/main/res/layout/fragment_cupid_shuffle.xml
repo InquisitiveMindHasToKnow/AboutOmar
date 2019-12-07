@@ -37,26 +37,90 @@
                 android:textSize="16sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                app:layout_constraintTop_toBottomOf="@id/cupid_shuffle_imageview"
-                android:text="Cupid Shuffle is the ultimate dating application to help anyone who is lacking in knowledge of the different countries around the world learn in minutes! It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for " />
+                android:text="Now we’re all familiar with the many dating applications out there, whether it’s Tinder, OKCupid, Bumble, Happn, just to name a few and although they’re all good in their own ways, Cupid Shuffle takes what they all do well and takes that a step further. Cupid Shuffle gives users the ability to not only find their  matches but selected a date and time for their potential outings. Game changer! \n\n Gone are the days of:  \n\nQuestion: “What do you want to do?” \n Response: “I don’t know. What do you want to do?” \n\n  Found a match? Pick from an assortment of date locations based on similar interests, pick a date and time, and you're on your way!  "
+                app:layout_constraintTop_toBottomOf="@id/cupid_shuffle_imageview"/>
 
-            <ImageView
-                android:id="@+id/tribute_imageview2"
-                android:layout_width="104dp"
-                android:layout_height="104dp"
-                android:layout_marginTop="16dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/androidbot"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview1"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/androidbot"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview2"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/androidbot"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview3"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/androidbot" />
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview4"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/androidbot"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview5"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/androidbot"/>
+
+                        <com.github.chrisbanes.photoview.PhotoView
+                            android:id="@+id/cupid_shuffle_imageview6"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/androidbot"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
             <TextView
                 android:id="@+id/cupid_shuffle_link_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+                android:text="Click to view source code"
                 />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
