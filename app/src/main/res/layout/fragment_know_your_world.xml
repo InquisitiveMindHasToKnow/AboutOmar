@@ -113,18 +113,20 @@
 
             </HorizontalScrollView>
 
-            <TextView
-                android:id="@+id/know_your_world_link_textview"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/know_your_world_link_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/roundedbuttons"
                 android:textColor="@color/textColor"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="24dp"
-                android:text="Click to view source code"
+                android:text="   Source Code   "
                 />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
