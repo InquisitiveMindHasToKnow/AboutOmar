@@ -4,13 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
     tools:context=".activities.Resume">
 
-    <TextView
+    <View
+        android:layout_width="412dp"
+        android:layout_height="160dp"
+        android:background="@color/mainViewColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="56sp"
-        android:text="Resume"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:text="Resume"
+            android:textColor="@color/textColor"
+            android:textSize="56sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resume_skills_header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:text="Skills:"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/resume_skills_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:text="Java, Android, XML, RetroFit, Picasso, SQLite, JSON, Git/Github, Room, Bash, Android Studio "
+                android:textColor="@color/textColor"/>
+
+
+            <TextView
+                android:id="@+id/resume_experience_header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:text="Experience:"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

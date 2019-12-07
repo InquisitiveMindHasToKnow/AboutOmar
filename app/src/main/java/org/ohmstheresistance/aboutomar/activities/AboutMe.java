@@ -32,6 +32,7 @@ public class AboutMe extends AppCompatActivity {
             descriptiveWordsTextView.setText(descriptiveWord);
             descriptiveWordsTextView.setGravity(Gravity.CENTER);
             descriptiveWordsTextView.setTextSize(40);
+            descriptiveWordsTextView.setTextColor(getResources().getColor(R.color.textColor));
             descriptiveWordsTextView.setTypeface(descriptiveWordsTextView.getTypeface(), Typeface.BOLD_ITALIC);
             descriptiveWordsViewFlipper.addView(descriptiveWordsTextView);
 

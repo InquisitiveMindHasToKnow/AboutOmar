@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.KnowYourWorldFragment">
 
@@ -33,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textSize="16sp"
+                android:textColor="@color/textColor"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintTop_toBottomOf="@id/know_your_world_imageview"
@@ -115,6 +117,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textSize="24sp"
+                android:textColor="@color/textColor"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="24dp"

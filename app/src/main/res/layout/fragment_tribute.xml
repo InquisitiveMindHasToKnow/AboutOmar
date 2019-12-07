@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainBackgroundColor"
     tools:context=".fragments.TributeFragment">
 
 
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="16sp"
+        android:textColor="@color/textColor"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="Take a step back, imagine yourself in your favorite class taking notes and trying to focus on the lecture as you’re genuinely interesting in learning the subject matter. \n\nNow imagine that focus constantly being broken by your instructor calling on you, on multiple occasions to demonstrate how to solve certain problems in front of the class. Yep, that’s what happened to me, and what led to Tribute being created. \n\nTribute selects a name from a pool of names at random and removes it from the pool once it’s been picked just once. My instructor was now afforded the opportunity to either use the pre-made list of names or create his own to choose from. \n\nRoom Database, RxJava, Shared Preferences, and  Retrotfit 2  are among the many libraries utilized in the making of this application."/>
@@ -110,6 +112,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="24sp"
+            android:textColor="@color/textColor"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="24dp"
             android:layout_marginEnd="16dp"
