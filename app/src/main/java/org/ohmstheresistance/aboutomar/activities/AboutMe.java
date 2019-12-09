@@ -23,6 +23,8 @@ public class AboutMe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
 
+        overridePendingTransition(R.anim.slide_in_right, 0);
+
 
         descriptiveWordsViewFlipper = findViewById(R.id.descriptive_words_view_flipper);
 
@@ -38,7 +40,7 @@ public class AboutMe extends AppCompatActivity {
 
         }
 
-        descriptiveWordsViewFlipper.setInAnimation(AboutMe.this, R.anim.bounce);
+        descriptiveWordsViewFlipper.setInAnimation(AboutMe.this, R.anim.scaleup);
         descriptiveWordsViewFlipper.setOutAnimation(AboutMe.this,  R.anim.slide_out_right);
         descriptiveWordsViewFlipper.setFlipInterval(4000);
         descriptiveWordsViewFlipper.startFlipping();
