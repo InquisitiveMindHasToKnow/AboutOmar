@@ -17,7 +17,7 @@ public class Resume extends AppCompatActivity {
         setContentView(R.layout.activity_resume);
 
         pursuitExperienceTextview = findViewById(R.id.pursuit_experience_textview);
-      //  pursuitExperienceTextview.startAnimation(AnimationUtils.loadAnimation(Resume.this, R.anim.slide_in_left));
+       // pursuitExperienceTextview.startAnimation(AnimationUtils.loadAnimation(Resume.this, R.anim.slide_in_left));
 
 
     }
@@ -27,7 +27,7 @@ public class Resume extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
-        overridePendingTransition(0, R.anim.scaledown);
+        overridePendingTransition(0, R.anim.exit_bottom);
 
     }
 }

@@ -1,6 +1,9 @@
 package org.ohmstheresistance.aboutomar.activities;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,9 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button profileContactMeButton;
     private Button profileProjectsButton;
     private Button profileResumeButton;
-
-
     private Intent navigationIntent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, AboutMe.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
+                overridePendingTransition(R.anim.bounce, R.anim.fade);
                 break;
 
             case R.id.profile_contact_me_button:
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Resume.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
         }
     }
