@@ -87,8 +87,19 @@
             android:layout_marginTop="16dp"
             android:lineSpacingExtra="2dp"
             android:textColor="@color/textColor"
-            android:text=""
+            android:textStyle="italic"
+            android:text="How will I be an asset to the team?"
             />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/textColor"
+                android:text="One quality I attribute to a good teammate is giving relentless effort to ensure the success of the team as a whole. I will give 110% effort to ensure that all tasks I’m assigned are completed properly and on time. I listen attentively to constructive criticism, speak candidly and always treat others with respect."
+                />
 
         </LinearLayout>
         </ScrollView>

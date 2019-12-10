@@ -1,6 +1,5 @@
 package org.ohmstheresistance.aboutomar.activities;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -34,9 +33,10 @@ public class AboutMe extends AppCompatActivity {
         ActionBar bar = getSupportActionBar();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
+
         }
 
-        overridePendingTransition(R.anim.slide_in_right, 0);
+        overridePendingTransition(R.anim.slide_in_left, 0);
 
 
         descriptiveWordsViewFlipper = findViewById(R.id.descriptive_words_view_flipper);

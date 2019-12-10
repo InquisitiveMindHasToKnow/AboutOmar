@@ -1,7 +1,6 @@
 package org.ohmstheresistance.aboutomar.activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -41,7 +40,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
         contactMeGmailButton = findViewById(R.id.contact_me_gmail_button);
         contactMeGithubButton = findViewById(R.id.contact_me_github_button);
         contactMeLinkedInButton = findViewById(R.id.contact_me_linked_in_button);
-        contactMeDirectMessageButton = findViewById(R.id.contact_me_direct_message_button);
+        contactMeDirectMessageButton = findViewById(R.id.contact_me_phone_call_button);
         waysToContactLinearLayout = findViewById(R.id.ways_to_contact_linear);
         contactMeAndroidRobot = findViewById(R.id.contact_me_android_robot);
 
@@ -111,7 +110,13 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
                 break;
 
 
-            case R.id.contact_me_direct_message_button:
+            case R.id.contact_me_phone_call_button:
+
+                String numberToCall = "123-456-7890";
+
+                contactIntent = new Intent(Intent.ACTION_DIAL);
+                contactIntent.setData(Uri.parse("tel:" + numberToCall));
+                startActivity(contactIntent);
 
                 overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
                 break;
