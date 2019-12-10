@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 
+import android.view.animation.AnimationUtils;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -18,8 +20,10 @@ public class AboutMe extends AppCompatActivity {
 
 
     private ViewFlipper descriptiveWordsViewFlipper;
+
     private TextView descriptiveWordsTextView;
-    private String[] descriptiveList = {"Dedicated", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional", "Driven"};
+    private ScrollView aboutMeScrollView;
+    private String[] descriptiveList = {"Analytical", "Innovative", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional", "Driven", "Forward-Thinking"};
 
 
     @Override
@@ -36,6 +40,10 @@ public class AboutMe extends AppCompatActivity {
 
 
         descriptiveWordsViewFlipper = findViewById(R.id.descriptive_words_view_flipper);
+        aboutMeScrollView = findViewById(R.id.about_me_scrollview);
+
+        aboutMeScrollView.startAnimation(AnimationUtils.loadAnimation(AboutMe.this, R.anim.bounce));
+
 
         for (String descriptiveWord : descriptiveList) {
 
