@@ -1,9 +1,10 @@
 package org.ohmstheresistance.aboutomar.activities;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar bar = getSupportActionBar();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
+        }
 
 
         profileAboutMeButton = findViewById(R.id.profile_about_me_button);

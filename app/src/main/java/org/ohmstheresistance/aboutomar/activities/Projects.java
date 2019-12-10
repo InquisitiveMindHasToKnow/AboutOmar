@@ -1,8 +1,12 @@
 package org.ohmstheresistance.aboutomar.activities;
 
 import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -30,6 +34,11 @@ public class Projects extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(projectsViewPager);
+
+        ActionBar bar = getSupportActionBar();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
+        }
 
         disableTabClicks();
 
