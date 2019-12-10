@@ -29,14 +29,69 @@
             android:inAnimation="@android:anim/slide_in_left"
             android:outAnimation="@android:anim/slide_out_right"/>
 
+        <ScrollView
+            android:id="@+id/about_me_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Are you looking for an Android Developer to join your development team? Look no further..."
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="16dp"
+            android:text="You're in the right place!"
+            android:textColor="@color/textColor"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_user_image_circular_imageview"
+            android:layout_width="190dp"
+            android:layout_height="181dp"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_shadow="true"
+            android:src="@drawable/omar"
+            app:civ_shadow_radius="10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="2dp"
             android:textColor="@color/textColor"
-            android:text="\t \t I've been interested in Android Development for about as long as I can remember. Growing up, I was always fascinated by the joy games and applications brought to people and how much easier they made their lives.  "
+            android:text="Based in Brooklyn, N.Y., I’m an Android Developer with experience in building, integrating, and testing applications on mobile and tablet devices. Fueled by a deep desire to learn, I create applications, to not only solve everyday problems, but to stay up to date in an ever evolving field of study all while striving to write efficient, maintainable, and reusable code."
             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/textColor"
+            android:text=""
+            />
+
+        </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
