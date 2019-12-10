@@ -1,8 +1,12 @@
 package org.ohmstheresistance.aboutomar.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +32,11 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_me);
+
+        ActionBar bar = getSupportActionBar();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
+        }
 
         contactMeGmailButton = findViewById(R.id.contact_me_gmail_button);
         contactMeGithubButton = findViewById(R.id.contact_me_github_button);
