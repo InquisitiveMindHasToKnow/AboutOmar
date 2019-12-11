@@ -73,6 +73,17 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
 
         switch (id) {
 
+            case R.id.contact_me_phone_call_button:
+
+                String numberToCall = "973-289-2836";
+
+                contactIntent = new Intent(Intent.ACTION_DIAL);
+                contactIntent.setData(Uri.parse("tel:" + numberToCall));
+                startActivity(contactIntent);
+
+                overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
+                break;
+
             case R.id.contact_me_gmail_button:
 
                 contactIntent = new Intent(Intent.ACTION_SEND);
@@ -109,17 +120,6 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
 
                 break;
 
-
-            case R.id.contact_me_phone_call_button:
-
-                String numberToCall = "123-456-7890";
-
-                contactIntent = new Intent(Intent.ACTION_DIAL);
-                contactIntent.setData(Uri.parse("tel:" + numberToCall));
-                startActivity(contactIntent);
-
-                overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
-                break;
         }
 
     }
