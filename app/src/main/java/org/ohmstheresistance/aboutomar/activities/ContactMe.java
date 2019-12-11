@@ -32,6 +32,9 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_me);
 
+        overridePendingTransition(0, R.anim.slide_out_right);
+
+
         ActionBar bar = getSupportActionBar();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
@@ -123,13 +126,4 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
         }
 
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        overridePendingTransition(0, R.anim.zoom_exit);
-
-    }
-
 }

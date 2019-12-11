@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 
-import android.view.animation.AnimationUtils;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
@@ -30,19 +29,17 @@ public class AboutMe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
 
+        overridePendingTransition(0, R.anim.slide_out_left);
+
+
         ActionBar bar = getSupportActionBar();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
 
         }
 
-        overridePendingTransition(R.anim.slide_in_left, 0);
-
-
         descriptiveWordsViewFlipper = findViewById(R.id.descriptive_words_view_flipper);
         aboutMeScrollView = findViewById(R.id.about_me_scrollview);
-
-        aboutMeScrollView.startAnimation(AnimationUtils.loadAnimation(AboutMe.this, R.anim.bounce));
 
 
         for (String descriptiveWord : descriptiveList) {
@@ -65,12 +62,5 @@ public class AboutMe extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        overridePendingTransition(0, 0);
-
-    }
 }
 

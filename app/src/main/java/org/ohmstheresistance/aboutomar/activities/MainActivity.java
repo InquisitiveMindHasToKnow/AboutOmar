@@ -1,7 +1,6 @@
 package org.ohmstheresistance.aboutomar.activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.support.v7.app.ActionBar;
@@ -54,22 +53,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, AboutMe.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.bounce, R.anim.fade);
                 break;
 
             case R.id.profile_contact_me_button:
 
                 navigationIntent = new Intent(MainActivity.this, ContactMe.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
-
                 break;
 
             case R.id.profile_projects_button:
 
                 navigationIntent = new Intent(MainActivity.this, Projects.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
                 break;
 
 
@@ -77,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 navigationIntent = new Intent(MainActivity.this, Resume.class);
                 startActivity(navigationIntent);
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 break;
         }
     }

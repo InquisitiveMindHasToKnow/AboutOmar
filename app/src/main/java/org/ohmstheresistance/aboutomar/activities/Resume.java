@@ -1,6 +1,5 @@
 package org.ohmstheresistance.aboutomar.activities;
 
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -21,6 +20,9 @@ public class Resume extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resume);
 
+        overridePendingTransition(0, R.anim.zoom_exit);
+
+
         ActionBar bar = getSupportActionBar();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
@@ -32,15 +34,6 @@ public class Resume extends AppCompatActivity {
         resumeSkillsHeader.setPaintFlags(resumeSkillsHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         resumeExperienceHeader.setPaintFlags(resumeExperienceHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
-
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        overridePendingTransition(0, R.anim.exit_bottom);
 
     }
 }
