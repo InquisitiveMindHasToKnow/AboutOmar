@@ -22,7 +22,7 @@ public class AboutMe extends AppCompatActivity {
 
     private TextView descriptiveWordsTextView;
     private ScrollView aboutMeScrollView;
-    private String[] descriptiveList = {"Analytical", "Innovative", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional", "Driven", "Forward-Thinking"};
+    private String[] descriptiveList = {"Analytical","Goal-Oriented", "Innovative", "Motivated", "Hardworking", "Team-Oriented", "Charismatic", "Professional", "Driven", "Forward-Thinking"};
 
 
     @Override

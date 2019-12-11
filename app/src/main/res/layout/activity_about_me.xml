@@ -63,7 +63,7 @@
             android:id="@+id/profile_user_image_circular_imageview"
             android:layout_width="190dp"
             android:layout_height="181dp"
-            app:civ_border_color="#EEEEEE"
+            app:civ_border_color="#FFF3D9"
             app:civ_border_width="4dp"
             android:layout_gravity="center_horizontal"
             app:civ_shadow="true"
@@ -97,8 +97,9 @@
                 android:textSize="16sp"
                 android:layout_marginTop="16dp"
                 android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp"
                 android:textColor="@color/textColor"
-                android:text="One quality I attribute to a good teammate is giving relentless effort to ensure the success of the team as a whole. I will give 110% effort to ensure that all tasks I’m assigned are completed properly and on time. I listen attentively to constructive criticism, speak candidly and always treat others with respect."
+                android:text="By far, I believe my biggest attribute is that I'm coachable. I will relentlessly give 110% effort to ensure that all tasks I’m assigned are completed properly and on time. I listen attentively to constructive criticism, speak candidly and will admit mistakes, take responsibility for them and use them as opportunities to grow. In short, my commitment to the success of the team is paramount. "
                 />
 
         </LinearLayout>
