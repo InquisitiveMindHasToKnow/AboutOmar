@@ -1,19 +1,20 @@
 package org.ohmstheresistance.aboutomar.activities;
 
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import org.ohmstheresistance.aboutomar.R;
 
 public class Resume extends AppCompatActivity {
 
-    private TextView pursuitExperienceTextview;
+    private TextView resumeSkillsHeader;
+    private TextView resumeExperienceHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,11 @@ public class Resume extends AppCompatActivity {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
         }
 
-        pursuitExperienceTextview = findViewById(R.id.pursuit_experience_textview);
-       // pursuitExperienceTextview.startAnimation(AnimationUtils.loadAnimation(Resume.this, R.anim.slide_in_left));
+        resumeSkillsHeader = findViewById(R.id.resume_skills_header_textview);
+        resumeExperienceHeader = findViewById(R.id.resume_experience_header_textview);
+
+        resumeSkillsHeader.setPaintFlags(resumeSkillsHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        resumeExperienceHeader.setPaintFlags(resumeExperienceHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
 
     }

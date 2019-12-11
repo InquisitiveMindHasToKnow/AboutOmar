@@ -49,7 +49,8 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:textSize="24sp"
-                android:text="Skills:"
+                android:text="Skills"
+                android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textColor="@color/textColor"/>
 
@@ -191,10 +192,10 @@
 
 
                 <ImageView
-                    android:layout_width="16dp"
+                    android:layout_width="8dp"
                     android:layout_height="16dp"
                     android:layout_marginStart="8dp"
-                    android:background="@drawable/ratingbot"
+                    android:background="@drawable/halfratingbot"
                     />
 
             </LinearLayout>
@@ -222,8 +223,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
                 android:textSize="24sp"
-                android:text="Experience:"
+                android:gravity="center_horizontal"
+                android:text="Experience"
                 android:textStyle="bold"
                 android:textColor="@color/textColor"/>
 
