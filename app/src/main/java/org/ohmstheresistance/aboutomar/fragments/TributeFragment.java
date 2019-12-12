@@ -17,11 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.ohmstheresistance.aboutomar.R;
-import org.ohmstheresistance.aboutomar.activities.AboutMe;
-import org.ohmstheresistance.aboutomar.activities.ContactMe;
-import org.ohmstheresistance.aboutomar.activities.MainActivity;
-import org.ohmstheresistance.aboutomar.activities.Projects;
-import org.ohmstheresistance.aboutomar.activities.Resume;
 
 public class TributeFragment extends Fragment implements View.OnClickListener {
 
@@ -37,8 +32,9 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
     private AlertDialog.Builder zoomedImageAlertDialog;
     private LayoutInflater layoutInflater;
-    private View  viewTemplateLayout;
+    private View viewTemplateLayout;
     private ImageView zoomedSelectedImage;
+    ViewGroup parent;
 
 
     public TributeFragment() {
@@ -62,9 +58,11 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
         tributeAddPersonImageView = rootView.findViewById(R.id.tribute_added_person_imageview);
 
         zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
-        layoutInflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        viewTemplateLayout= layoutInflater.inflate(R.layout.fragment_display_zoomed_image, null);
-        zoomedSelectedImage =  viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
+        layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
+        zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
+
+        parent = (ViewGroup) viewTemplateLayout.getParent();
 
         return rootView;
     }
@@ -72,7 +70,6 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
 
         tributeLinkButton.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +100,10 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
         switch (id) {
             case R.id.tribute_signin_imageview:
 
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_signin_page);
                 zoomedImageAlertDialog.show();
@@ -111,6 +112,10 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.tribute_registration_imageview:
 
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_registration_page);
                 zoomedImageAlertDialog.show();
@@ -119,6 +124,10 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.tribute_main_page_imageview:
 
+                    parent = (ViewGroup) viewTemplateLayout.getParent();
+                    if (parent != null) {
+                        parent.removeView(viewTemplateLayout);
+                    }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_main_page);
                 zoomedImageAlertDialog.show();
@@ -127,6 +136,10 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.tribute_stock_names_imageview:
 
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_stock_names);
                 zoomedImageAlertDialog.show();
@@ -134,6 +147,10 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.tribute_selected_person_imageview:
 
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_random_peerson_picked);
                 zoomedImageAlertDialog.show();
@@ -141,10 +158,15 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.tribute_added_person_imageview:
 
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.tribute_added_name);
                 zoomedImageAlertDialog.show();
                 break;
         }
+
     }
 }
