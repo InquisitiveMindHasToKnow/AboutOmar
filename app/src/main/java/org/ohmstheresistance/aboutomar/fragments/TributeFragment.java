@@ -2,7 +2,6 @@ package org.ohmstheresistance.aboutomar.fragments;
 
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -31,10 +30,9 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
     private ImageView tributeAddPersonImageView;
 
     private AlertDialog.Builder zoomedImageAlertDialog;
-    private LayoutInflater layoutInflater;
     private View viewTemplateLayout;
     private ImageView zoomedSelectedImage;
-    ViewGroup parent;
+    private ViewGroup parent;
 
 
     public TributeFragment() {
@@ -45,7 +43,7 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         rootView = inflater.inflate(R.layout.fragment_tribute, container, false);
 
         tributeDescriptionTextView = rootView.findViewById(R.id.tribute_description_textview);
@@ -58,10 +56,8 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
         tributeAddPersonImageView = rootView.findViewById(R.id.tribute_added_person_imageview);
 
         zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
-        layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
         zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
-
         parent = (ViewGroup) viewTemplateLayout.getParent();
 
         return rootView;

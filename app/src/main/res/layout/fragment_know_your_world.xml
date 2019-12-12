@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content" >
 
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_main_page_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
@@ -67,7 +67,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/kyw_main_page_image"/>
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_study_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
@@ -75,7 +75,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/kyw_study_image"/>
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_selected_country_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
@@ -83,7 +83,7 @@
                     android:layout_marginTop="16dp"
                     android:src="@drawable/kyw_selected_country_image" />
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_quiz_mainpage_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
@@ -91,7 +91,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/kyw_quiz_main_page"/>
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_quiz_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
@@ -99,7 +99,7 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/kyw_quiz_image"/>
 
-                <com.github.chrisbanes.photoview.PhotoView
+                <ImageView
                     android:id="@+id/kyw_favorite_countries_imageview"
                     android:layout_width="104dp"
                     android:layout_height="104dp"
