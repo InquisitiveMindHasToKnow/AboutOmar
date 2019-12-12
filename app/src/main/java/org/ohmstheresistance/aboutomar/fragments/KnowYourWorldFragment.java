@@ -1,6 +1,7 @@
 package org.ohmstheresistance.aboutomar.fragments;
 
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,25 +12,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.github.chrisbanes.photoview.PhotoView;
 
 import org.ohmstheresistance.aboutomar.R;
 
-public class KnowYourWorldFragment extends Fragment {
+public class KnowYourWorldFragment extends Fragment implements View.OnClickListener{
 
 
     private View rootView;
     private TextView knowYourWorldDescriptionTextView;
     private Button knowYourWorldLinkButton;
-    private PhotoView knowYourWorldMainPageImageView;
-    private PhotoView knowYourWorldStudyImageView;
-    private PhotoView knowYourWorldSelectedCountryImageView;
-    private PhotoView knowYourWorldQuizMainPageImageView;
-    private PhotoView knowYourWorldQuizImageView;
-    private PhotoView knowYourWorldFavoriteCountriesImageView;
+    private ImageView knowYourWorldMainPageImageView;
+    private ImageView knowYourWorldStudyImageView;
+    private ImageView knowYourWorldSelectedCountryImageView;
+    private ImageView knowYourWorldQuizMainPageImageView;
+    private ImageView knowYourWorldQuizImageView;
+    private ImageView knowYourWorldFavoriteCountriesImageView;
 
+    private AlertDialog.Builder zoomedImageAlertDialog;
+    private View viewTemplateLayout;
+    private ImageView zoomedSelectedImage;
+    private ViewGroup parent;
 
     public KnowYourWorldFragment() {
         // Required empty public constructor
@@ -39,7 +43,7 @@ public class KnowYourWorldFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         rootView = inflater.inflate(R.layout.fragment_know_your_world, container, false);
 
         knowYourWorldDescriptionTextView = rootView.findViewById(R.id.know_your_world_description_textview);
@@ -50,6 +54,11 @@ public class KnowYourWorldFragment extends Fragment {
         knowYourWorldQuizMainPageImageView = rootView.findViewById(R.id.kyw_quiz_mainpage_imageview);
         knowYourWorldQuizImageView = rootView.findViewById(R.id.kyw_quiz_imageview);
         knowYourWorldFavoriteCountriesImageView = rootView.findViewById(R.id.kyw_favorite_countries_imageview);
+
+        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
+        viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
+        zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
+        parent = (ViewGroup) viewTemplateLayout.getParent();
 
         return rootView;
     }
@@ -68,6 +77,90 @@ public class KnowYourWorldFragment extends Fragment {
                 startActivity(viewLinkIntent);
             }
         });
+
+        knowYourWorldMainPageImageView.setOnClickListener(this);
+        knowYourWorldStudyImageView.setOnClickListener(this);
+        knowYourWorldSelectedCountryImageView.setOnClickListener(this);
+        knowYourWorldQuizMainPageImageView.setOnClickListener(this);
+        knowYourWorldQuizImageView.setOnClickListener(this);
+        knowYourWorldFavoriteCountriesImageView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        int id = v.getId();
+
+        switch (id) {
+            case R.id.kyw_main_page_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_main_page_image);
+                zoomedImageAlertDialog.show();
+
+                break;
+
+            case R.id.kyw_study_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_study_image);
+                zoomedImageAlertDialog.show();
+
+                break;
+
+            case R.id.kyw_selected_country_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_selected_country_image);
+                zoomedImageAlertDialog.show();
+                break;
+
+
+            case R.id.kyw_quiz_mainpage_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_quiz_main_page);
+                zoomedImageAlertDialog.show();
+                break;
+
+            case R.id.kyw_quiz_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_quiz_image);
+                zoomedImageAlertDialog.show();
+                break;
+
+            case R.id.kyw_favorite_countries_imageview:
+
+                parent = (ViewGroup) viewTemplateLayout.getParent();
+                if (parent != null) {
+                    parent.removeView(viewTemplateLayout);
+                }
+                zoomedImageAlertDialog.setView(viewTemplateLayout);
+                zoomedSelectedImage.setImageResource(R.drawable.kyw_favorite_image);
+                zoomedImageAlertDialog.show();
+                break;
+        }
 
     }
 }
