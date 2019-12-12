@@ -40,8 +40,6 @@ public class Projects extends AppCompatActivity {
             bar.setBackgroundDrawable(new ColorDrawable(getColor(R.color.actionBarColorTest)));
         }
 
-        disableTabClicks();
-
     }
 
 
@@ -63,19 +61,6 @@ public class Projects extends AppCompatActivity {
             }
         });
 
-    }
-
-    private void disableTabClicks(){
-
-        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
-        for(int i = 0; i < tabStrip.getChildCount(); i++) {
-            tabStrip.getChildAt(i).setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    return true;
-                }
-            });
-        }
     }
 
 }
