@@ -54,10 +54,16 @@
                 android:textStyle="bold"
                 android:textColor="@color/textColor"/>
 
+            <View style="@style/Divider"/>
+
             <LinearLayout
                 android:id="@+id/resume_four_star_rating_linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/mainViewColor"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -90,11 +96,14 @@
 
             </LinearLayout>
 
+            <View style="@style/Divider"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="8dp"
                 android:text="Demonstrable knowledge of: "
                 android:textColor="@color/textColor"/>
@@ -120,15 +129,21 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:text="• Creating and testing applications on the latest android devices "
                 android:textColor="@color/textColor"/>
 
+
+            <View style="@style/Divider"/>
 
             <LinearLayout
                 android:id="@+id/resume_three_star_rating_linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:background="@color/mainViewColor"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -151,12 +166,14 @@
                     android:background="@drawable/ratingbot"/>
 
             </LinearLayout>
+            <View style="@style/Divider"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="8dp"
                 android:text="Strong knowledge of: "
                 android:textColor="@color/textColor"/>
@@ -174,15 +191,20 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:text="• Using databases such as SQLite and Room to store data locally on devices."
                 android:textColor="@color/textColor"/>
 
 
+            <View style="@style/Divider"/>
             <LinearLayout
                 android:id="@+id/resume_two_star_rating_linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:background="@color/mainViewColor"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -200,12 +222,16 @@
 
             </LinearLayout>
 
+            <View style="@style/Divider"/>
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
                 android:text="Currently Learning: "
                 android:textColor="@color/textColor"/>
 

@@ -31,9 +31,9 @@ public class Resume extends AppCompatActivity {
         resumeSkillsHeader = findViewById(R.id.resume_skills_header_textview);
         resumeExperienceHeader = findViewById(R.id.resume_experience_header_textview);
 
+
         resumeSkillsHeader.setPaintFlags(resumeSkillsHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         resumeExperienceHeader.setPaintFlags(resumeExperienceHeader.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-
 
     }
 }
