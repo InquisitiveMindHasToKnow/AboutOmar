@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content" >
 
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_signin_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
@@ -62,7 +62,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/tribute_signin_page"/>
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_registration_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
@@ -70,7 +70,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/tribute_registration_page"/>
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_main_page_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
@@ -78,7 +78,7 @@
                         android:layout_marginTop="16dp"
                         android:src="@drawable/tribute_main_page" />
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_stock_names_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
@@ -86,7 +86,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/tribute_stock_names"/>
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_selected_person_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
@@ -94,7 +94,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/tribute_random_peerson_picked"/>
 
-                    <com.github.chrisbanes.photoview.PhotoView
+                    <ImageView
                         android:id="@+id/tribute_added_person_imageview"
                         android:layout_width="104dp"
                         android:layout_height="104dp"
