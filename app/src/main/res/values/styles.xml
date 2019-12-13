@@ -28,4 +28,9 @@
         <item name="android:background">@color/textColor</item>
     </style>
 
+    <style name="DialogCustom" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
 </resources>

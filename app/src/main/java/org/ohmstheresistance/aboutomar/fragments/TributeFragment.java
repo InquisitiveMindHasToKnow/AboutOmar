@@ -55,7 +55,7 @@ public class TributeFragment extends Fragment implements View.OnClickListener {
         tributeSelectedNameImageView = rootView.findViewById(R.id.tribute_selected_person_imageview);
         tributeAddPersonImageView = rootView.findViewById(R.id.tribute_added_person_imageview);
 
-        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
+        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity(), R.style.DialogCustom);
         viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
         zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
         parent = (ViewGroup) viewTemplateLayout.getParent();
