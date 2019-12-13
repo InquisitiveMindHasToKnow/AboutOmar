@@ -55,7 +55,7 @@ public class KnowYourWorldFragment extends Fragment implements View.OnClickListe
         knowYourWorldQuizImageView = rootView.findViewById(R.id.kyw_quiz_imageview);
         knowYourWorldFavoriteCountriesImageView = rootView.findViewById(R.id.kyw_favorite_countries_imageview);
 
-        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
+        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity(), R.style.DialogCustom);
         viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
         zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
         parent = (ViewGroup) viewTemplateLayout.getParent();

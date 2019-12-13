@@ -60,7 +60,7 @@ public class CupidShuffleFragment extends Fragment implements View.OnClickListen
         cupidShuffleDateReservationConfirmationImageView = rootView.findViewById(R.id.cs_date_reservation_confirmation_imageview);
 
 
-        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity());
+        zoomedImageAlertDialog = new AlertDialog.Builder(getActivity(), R.style.DialogCustom);
         viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
         zoomedSelectedImage = viewTemplateLayout.findViewById(R.id.zoomed_in_image_imageview);
         parent = (ViewGroup) viewTemplateLayout.getParent();
