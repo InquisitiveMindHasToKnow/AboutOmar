@@ -13,6 +13,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.ToxicBakery.viewpager.transforms.BackgroundToForegroundTransformer;
+
 import org.ohmstheresistance.aboutomar.R;
 import org.ohmstheresistance.aboutomar.adapters.ProjectsViewPagerAdapter;
 import org.ohmstheresistance.aboutomar.fragments.CupidShuffleFragment;
@@ -51,15 +53,7 @@ public class Projects extends AppCompatActivity {
         projectsViewPagerAdapter.addFragments(new TributeFragment(), "Tribute");
 
         viewPager.setAdapter(projectsViewPagerAdapter);
-
-        viewPager.setPageTransformer(false, new ViewPager.PageTransformer() {
-            @Override
-            public void transformPage(View page, float position) {
-
-                overridePendingTransition(0, R.anim.fade);
-
-            }
-        });
+        viewPager.setPageTransformer(true, new BackgroundToForegroundTransformer());
 
     }
 
