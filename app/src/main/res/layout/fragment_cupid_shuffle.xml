@@ -40,7 +40,7 @@
                 android:textColor="@color/textColor"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Now we’re all familiar with the many dating applications out there, whether it’s Tinder, OKCupid, Bumble, Happn, just to name a few and although they’re all good in their own ways, Cupid Shuffle takes what they all do well and takes that a step further. Cupid Shuffle gives users the ability to not only find their  matches but selected a date and time for their potential outings. Game changer! \n\n Gone are the days of:  \n\nQuestion: “What do you want to do?” \n Response: “I don’t know. What do you want to do?” \n\n  Found a match? Pick from an assortment of date locations based on similar interests, pick a date and time, and you're on your way!  "
+                android:text="Now we’re all familiar with the many dating applications out there, whether it’s Tinder, OKCupid, Bumble, Happn, just to name a few. Although they’re all good in their own ways, Cupid Shuffle takes what they all do well but goes a step further. Cupid Shuffle not only helps users find their perfect matches, it gives them the ability to select a date and time for their potential outings. Game changer! \n\n Gone are the days of:  \n\nQuestion: “What do you want to do?” \n Response: “I don’t know. What do you want to do?” \n\n  Found a match? Pick from an assortment of date locations based on similar interests, pick a date and time, and you're on your way!  "
                 app:layout_constraintTop_toBottomOf="@id/cupid_shuffle_imageview"/>
 
             <HorizontalScrollView
