@@ -47,7 +47,6 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
         waysToContactLinearLayout = findViewById(R.id.ways_to_contact_linear);
         contactMeAndroidRobot = findViewById(R.id.contact_me_android_robot);
 
-
         contactMeGmailButton.setOnClickListener(this);
         contactMeGithubButton.setOnClickListener(this);
         contactMeLinkedInButton.setOnClickListener(this);
@@ -64,7 +63,7 @@ public class ContactMe extends AppCompatActivity implements View.OnClickListener
                 contactMeAndroidRobot.startAnimation(AnimationUtils.loadAnimation(ContactMe.this, R.anim.exit_bottom));
 
             }
-        }, 5000);
+        }, 3000);
 
     }
 
