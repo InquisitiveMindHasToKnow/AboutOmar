@@ -16,6 +16,7 @@ import org.ohmstheresistance.aboutomar.adapters.ProjectsViewPagerAdapter;
 import org.ohmstheresistance.aboutomar.fragments.CupidShuffleFragment;
 import org.ohmstheresistance.aboutomar.fragments.EssentialFactsFragment;
 import org.ohmstheresistance.aboutomar.fragments.KnowYourWorldFragment;
+import org.ohmstheresistance.aboutomar.fragments.MastermindFragment;
 import org.ohmstheresistance.aboutomar.fragments.TributeFragment;
 
 public class Projects extends AppCompatActivity {
@@ -46,6 +47,7 @@ public class Projects extends AppCompatActivity {
 
         ProjectsViewPagerAdapter projectsViewPagerAdapter = new ProjectsViewPagerAdapter(getSupportFragmentManager());
         projectsViewPagerAdapter.addFragments(new EssentialFactsFragment(), "Essential Facts");
+        projectsViewPagerAdapter.addFragments(new MastermindFragment(), "Mastermind");
         projectsViewPagerAdapter.addFragments(new KnowYourWorldFragment(), "Know Your World");
         projectsViewPagerAdapter.addFragments(new CupidShuffleFragment(), "Cupid Shuffle");
         projectsViewPagerAdapter.addFragments(new TributeFragment(), "Tribute");
