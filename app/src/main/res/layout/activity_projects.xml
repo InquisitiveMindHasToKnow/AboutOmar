@@ -41,6 +41,7 @@
                 android:background="#FFF"
                 app:tabTextColor="@color/mainBackgroundColor"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabMode="scrollable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
