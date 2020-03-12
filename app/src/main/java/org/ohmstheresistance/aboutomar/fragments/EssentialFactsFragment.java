@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import org.ohmstheresistance.aboutomar.R;
 
@@ -26,6 +27,7 @@ public class EssentialFactsFragment extends Fragment implements View.OnClickList
     private ImageView essentialFactsStudyImageView;
     private ImageView essentialFactsStudyWithAudioImageView;
     private ImageView essentialFactsTriviaImageView;
+    private TextView essentialFactsLinkToSurveyTextView;
 
     private AlertDialog.Builder zoomedImageAlertDialog;
     private View viewTemplateLayout;
@@ -50,6 +52,7 @@ public class EssentialFactsFragment extends Fragment implements View.OnClickList
         essentialFactsStudyImageView = rootView.findViewById(R.id.ef_study_imageview);
         essentialFactsStudyWithAudioImageView = rootView.findViewById(R.id.ef_study_with_audio_imageview);
         essentialFactsTriviaImageView = rootView.findViewById(R.id.ef_trivia_imageview);
+        essentialFactsLinkToSurveyTextView = rootView.findViewById(R.id.ef_link_to_survey_textview);
 
         zoomedImageAlertDialog = new AlertDialog.Builder(getActivity(), R.style.DialogCustom);
         viewTemplateLayout = inflater.inflate(R.layout.fragment_display_zoomed_image, container, false);
@@ -63,24 +66,14 @@ public class EssentialFactsFragment extends Fragment implements View.OnClickList
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        essentialFactsLinkButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String linkedInURL = "https://github.com/InquisitiveMindHasToKnow/EssentialFacts";
-
-                Intent viewLinkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInURL));
-                startActivity(viewLinkIntent);
-            }
-        });
-
-
         essentialFactsMainPageImageView.setOnClickListener(this);
         essentialFactsAboutImageView.setOnClickListener(this);
         essentialFactsRulesImageView.setOnClickListener(this);
         essentialFactsStudyImageView.setOnClickListener(this);
         essentialFactsStudyWithAudioImageView.setOnClickListener(this);
         essentialFactsTriviaImageView.setOnClickListener(this);
+        essentialFactsLinkButton.setOnClickListener(this);
+        essentialFactsLinkToSurveyTextView.setOnClickListener(this);
 
     }
 
@@ -157,6 +150,22 @@ public class EssentialFactsFragment extends Fragment implements View.OnClickList
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
                 zoomedSelectedImage.setImageResource(R.drawable.essential_facts_trivia);
                 zoomedImageAlertDialog.show();
+                break;
+
+            case R.id.ef_link_button:
+
+                String linkedInURL = "https://github.com/InquisitiveMindHasToKnow/EssentialFacts";
+
+                Intent viewLinkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkedInURL));
+                startActivity(viewLinkIntent);
+                break;
+
+            case R.id.ef_link_to_survey_textview:
+
+                String woodrowSurveyURL = "https://woodrow.org/news/national-survey-finds-just-1-in-3-americans-would-pass-citizenship-test/";
+
+                Intent viewSurveyLinkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(woodrowSurveyURL));
+                startActivity(viewSurveyLinkIntent);
                 break;
         }
 
