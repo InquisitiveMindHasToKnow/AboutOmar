@@ -116,10 +116,12 @@
             android:layout_gravity="center_horizontal"
             android:textSize="16sp"
             android:textAllCaps="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:background="@drawable/roundedbuttons"
             android:textColor="@color/textColor"
             android:layout_marginBottom="24dp"
-            android:text="   Source Code   "
+            android:text="Source Code"
             />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

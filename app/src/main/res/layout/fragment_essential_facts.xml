@@ -24,11 +24,12 @@
                 android:layout_width="104dp"
                 android:layout_height="104dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:src="@drawable/csimage"/>
+                android:src="@drawable/essential_facts"/>
 
 
             <TextView
@@ -40,7 +41,7 @@
                 android:textColor="@color/textColor"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Now we’re all familiar with the many dating applications out there, whether it’s Tinder, OKCupid, Bumble, Happn, just to name a few. Although they’re all good in their own ways, Cupid Shuffle takes what they all do well but goes a step further. Cupid Shuffle not only helps users find their perfect matches, it gives them the ability to select a date and time for their potential outings. Game changer! \n\n Gone are the days of:  \n\nQuestion: “What do you want to do?” \n Response: “I don’t know. What do you want to do?” \n\n  Found a match? Pick from an assortment of date locations based on similar interests, pick a date and time, and you're on your way!  "
+                android:text="Think you know your U.S. history and government? Then why who was the Founding Father of our nation? How many voting members are there in the House of Representatives? How many amendments does the Constitution have? \n\nOnly one in three Americans (36 percent) can actually pass a multiple choice test consisting of items taken from the U.S. Citizenship Test, which has a passing score of 60, according to a national survey released on October 18, 2019 by the Woodrow Wilson National Fellowship Foundation. Unbelievable!\n\nEssential Facts serves to educate both Americans and immigrants alike on U.S history and government and ensure (one person at a time) that the statistic changes for the better when taken again in the future."
                 app:layout_constraintTop_toBottomOf="@id/cupid_shuffle_imageview"/>
 
             <HorizontalScrollView
@@ -122,10 +123,12 @@
                 android:layout_gravity="center_horizontal"
                 android:textSize="16sp"
                 android:textAllCaps="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:background="@drawable/roundedbuttons"
                 android:textColor="@color/textColor"
                 android:layout_marginBottom="24dp"
-                android:text="   Source Code   "
+                android:text="Source Code"
                 />
 
         </LinearLayout>
