@@ -8,8 +8,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-
-import com.ToxicBakery.viewpager.transforms.BackgroundToForegroundTransformer;
+import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
 
 import org.ohmstheresistance.aboutomar.R;
 import org.ohmstheresistance.aboutomar.adapters.ProjectsViewPagerAdapter;
@@ -42,7 +41,6 @@ public class Projects extends AppCompatActivity {
 
     }
 
-
     private void setUpViewPager(ViewPager viewPager) {
 
         ProjectsViewPagerAdapter projectsViewPagerAdapter = new ProjectsViewPagerAdapter(getSupportFragmentManager());
@@ -53,7 +51,7 @@ public class Projects extends AppCompatActivity {
         projectsViewPagerAdapter.addFragments(new TributeFragment(), "Tribute");
 
         viewPager.setAdapter(projectsViewPagerAdapter);
-        viewPager.setPageTransformer(true, new BackgroundToForegroundTransformer());
+        viewPager.setPageTransformer(true, new CubeOutTransformer());
 
     }
 
