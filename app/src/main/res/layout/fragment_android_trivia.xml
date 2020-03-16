@@ -67,36 +67,47 @@
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/android_trivia_main_page"/>
 
                         <ImageView
+                            android:id="@+id/android_trivia_about_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/android_trivia_about"/>
 
                         <ImageView
+                            android:id="@+id/android_trivia_rules_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="16dp"
-                            android:src="@drawable/androidbot" />
+                            android:src="@drawable/android_trivia_rules" />
 
                         <ImageView
+                            android:id="@+id/android_trivia_quiz_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/android_trivia_quiz"/>
 
                         <ImageView
+                            android:id="@+id/android_trivia_winner_imageview"
                             android:layout_width="104dp"
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/android_trivia_winner"/>
 
+                        <ImageView
+                            android:id="@+id/android_trivia_loser_imageview"
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/android_trivia_loser"/>
 
                     </LinearLayout>
 
