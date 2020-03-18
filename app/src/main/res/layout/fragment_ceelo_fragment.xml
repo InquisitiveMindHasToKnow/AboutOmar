@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textSize="16sp"
+                android:text="Ahhh, CeeLo. The very first Kotlin centric application I created. It's pretty simple, honestly, but I think its simplicity makes it that much better. \n\nBased on the game almost everyone played as a child, it uses three dice that when rolled decides whether the player wins or loses after each turn. \n\n That's it, really. It's pretty fun and I'd be remiss if I did not mention how easily it can bring out your competitive nature!"
                 android:textColor="@color/textColor"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
@@ -67,7 +68,7 @@
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/ceelo_instructions"/>
 
                         <ImageView
                             android:id="@+id/ceelo_roller_imageview"
@@ -75,7 +76,7 @@
                             android:layout_height="104dp"
                             android:layout_marginTop="16dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/androidbot"/>
+                            android:src="@drawable/ceelo_dice_roller"/>
 
 
 
