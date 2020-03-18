@@ -77,7 +77,7 @@ public class CeeLoFragment extends Fragment implements View.OnClickListener {
                     parent.removeView(viewTemplateLayout);
                 }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
-                zoomedSelectedImage.setImageResource(R.drawable.essential_facts_main_page);
+                zoomedSelectedImage.setImageResource(R.drawable.ceelo_instructions);
                 zoomedImageAlertDialog.show();
 
                 break;
@@ -89,7 +89,7 @@ public class CeeLoFragment extends Fragment implements View.OnClickListener {
                     parent.removeView(viewTemplateLayout);
                 }
                 zoomedImageAlertDialog.setView(viewTemplateLayout);
-                zoomedSelectedImage.setImageResource(R.drawable.essential_facts_about);
+                zoomedSelectedImage.setImageResource(R.drawable.ceelo_dice_roller);
                 zoomedImageAlertDialog.show();
 
                 break;
