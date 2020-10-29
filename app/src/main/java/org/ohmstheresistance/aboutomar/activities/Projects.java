@@ -2,13 +2,13 @@ package org.ohmstheresistance.aboutomar.activities;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
-import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.tabs.TabLayout;
 
 import org.ohmstheresistance.aboutomar.R;
 import org.ohmstheresistance.aboutomar.adapters.ProjectsViewPagerAdapter;
@@ -53,6 +53,6 @@ public class Projects extends AppCompatActivity {
         projectsViewPagerAdapter.addFragments(new TributeFragment(), "Tribute");
 
         viewPager.setAdapter(projectsViewPagerAdapter);
-        viewPager.setPageTransformer(true, new CubeOutTransformer());
+       // viewPager.setPageTransformer(true, new CubeOutTransformer());
     }
 }
