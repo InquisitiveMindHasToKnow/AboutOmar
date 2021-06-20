@@ -94,6 +94,12 @@
                     android:background="@drawable/ratingbot"
                     />
 
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/halfratingbot"
+                    />
             </LinearLayout>
 
             <View style="@style/Divider"/>
@@ -113,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"
-                android:text="• Android, Java and XML"
+                android:text="• Android, Kotlin, Java and XML"
                 android:textColor="@color/textColor"/>
 
             <TextView
@@ -165,6 +171,13 @@
                     android:layout_marginStart="8dp"
                     android:background="@drawable/ratingbot"/>
 
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/halfratingbot"
+                    />
+
             </LinearLayout>
             <View style="@style/Divider"/>
 
@@ -214,11 +227,16 @@
 
 
                 <ImageView
-                    android:layout_width="8dp"
+                    android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginStart="8dp"
-                    android:background="@drawable/halfratingbot"
-                    />
+                    android:background="@drawable/ratingbot"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ratingbot"/>
 
             </LinearLayout>
 
@@ -241,6 +259,22 @@
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"
                 android:text="• Kotlin - Slowly but surely migrating personal projects to Kotlin to put everything I learn into practice. "
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:text="• Data Binding "
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:text="• Live Data "
                 android:textColor="@color/textColor"/>
 
 
